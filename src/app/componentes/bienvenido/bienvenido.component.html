@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <form class="login">
+        <div class="login__field">
+          <span class="input-group-text" id="inputGroup-sizing-default">Edad Uno</span>
+          <input type="number" [(ngModel)]="edadUno" name="edadUno" class="form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+        </div>
+        <div class="login__field">
+          <span class="span" id="inputGroup-sizing-default">Edad Dos</span>
+          <input type="number" [(ngModel)]="edadDos" name="edadDos" class="form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="login__field">
+          <span class="input-group-text" id="basic-addon1">Suma</span>
+          <input type="text" [(ngModel)]="suma" name="suma" class="form-control" placeholder="Username"
+            aria-label="Username" aria-describedby="basic-addon1">
+
+
+        </div>
+        <div class="login__field">
+          <span class="input-group-text" id="basic-addon1">Promedio</span>
+          <input type="text" [(ngModel)]="promedio" name="promedio" class="form-control" placeholder="Username"
+            aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="login__field">
+          <button (click)="calcular()" class="button login__submit" type="button">Hacer Calculo</button>
+          <button (click)="cleanValues()" class="button login__submit" type="button">Reset Values</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
